@@ -1,3 +1,5 @@
+Updating the script
+
 1.	download the file from mojang and save as server_temp.jar
 2.	calculate the checksum of server.jar and server_temp.jar
 3.	if checksums are different, delete server.jar raname server_temp.jar as server.jar else server is upto date
