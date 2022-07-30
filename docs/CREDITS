@@ -13,10 +13,15 @@ Affected files:
 eula.txt
 
 
-2.  
+2.  Igor Pavlov
+7-zip is a free file compression program by Igor Pavlov
+https://www.7-zip.org/
+
+Affected files:
+7zG.exe
 
 
-3.  github.com/dolphinotaku
+3.  dolphinotaku
 archive_your_project-bat by dolphinotaku
 https://gist.github.com/dolphinotaku/7dd49d20f513a2d998e7ebe10c0060db#file-archive_your_project-bat 
 
@@ -24,8 +29,8 @@ Affected files:
 update.bat
 
 
-4.  github.com/npocmaka
-https://github.com/npocmaka/batch.scripts by npocmaka
+4.  Vasil Arnaudov
+https://github.com/npocmaka/batch.scripts by Vasil Arnaudov aka npocmaka
 https://github.com/npocmaka/batch.scripts/blob/master/fileUtils/sha1.bat
 
 Affected files:
