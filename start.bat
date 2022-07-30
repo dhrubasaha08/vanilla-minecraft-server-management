@@ -1,9 +1,9 @@
 @echo off
 
 java ^
--Xmx8G ^
+-Xmx2G ^
 -Xms2G ^
--XX:SoftMaxHeapSize=2G ^
+-XX:SoftMaxHeapSize=4M ^
 -jar ^
 server.jar ^
 --bonusChest ^
@@ -11,7 +11,5 @@ server.jar ^
 --forceUpgrade ^
 --safeMode ^
 --nogui ^
-
-call backup.bat
 
 pause
