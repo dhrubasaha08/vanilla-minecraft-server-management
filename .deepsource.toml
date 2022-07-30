@@ -1,9 +1,1 @@
 version = 1
-
-[[analyzers]]
-name = "shell"
-enabled = true
-
-[[analyzers]]
-name = "test-coverage"
-enabled = true
