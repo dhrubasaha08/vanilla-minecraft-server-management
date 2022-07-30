@@ -10,6 +10,6 @@ set stamp=%HH%-%Min%-%Sec%_%DD%-%MM%-%YYYY%
 
 set folder_directory=%cd%
 
-"%folder_directory%\resources\7zG.exe" a "%folder_directory%\backup\world_%stamp%.zip" "%folder_directory%\world"
+7zG.exe a "%folder_directory%\backup\world_%stamp%.zip" "%folder_directory%\world"
 
 PAUSE
