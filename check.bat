@@ -1,4 +1,5 @@
 @echo off
+
 setlocal enableDelayedExpansion
 if "%~1" equ "" (
 	echo no file passed
