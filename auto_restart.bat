@@ -1,4 +1,4 @@
-:: Script to start the Minecraft server
+:: Script to start the Minecraft server v1.0.0 
 :: Copyright (C) 2022  Dhruba Saha
 
 :: This program is free software: you can redistribute it and/or modify
@@ -24,12 +24,8 @@
 @echo off
 title Minecraft Server
 color 73
-prompt [server]:
-cls
 
 :start
-echo Loading server...
-
 java ^
 -Xmx2G ^
 -Xms2G ^
@@ -42,25 +38,7 @@ server.jar ^
 --safeMode ^
 --nogui ^
 
-cls
-
-:choice
-set /P a=Do you want to restart[Y/N]?
-if /I "%a%" EQU "Y" goto :restart
-if /I "%a%" EQU "N" goto :stop
-goto :choice
-
-
 :restart
-cls
-echo Server will restart in 10 seconds...
-TIMEOUT /T 10
-cls
+echo Server will restart in 2 seconds, to exit CTRL+C or close the window now...
+timeout /T 2
 goto :start
-
-:stop
-
-cls
-echo Closing server
-TIMEOUT /T 5
-exit

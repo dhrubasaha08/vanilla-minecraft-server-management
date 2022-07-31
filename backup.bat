@@ -33,5 +33,5 @@ set folder_directory=%cd%
 7zG.exe a "%folder_directory%\backup\world_%stamp%.zip" "%folder_directory%\world"
 
 echo backup complete, closing cmd window...
-TIMEOUT /T 2
+timeout /T 2
 exit
