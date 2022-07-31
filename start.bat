@@ -1,4 +1,4 @@
-:: Script to start the Minecraft server
+:: Script to start the Minecraft server v1.0.0
 :: Copyright (C) 2022  Dhruba Saha
 
 :: This program is free software: you can redistribute it and/or modify
@@ -20,7 +20,10 @@
 :: Recommended: XMS=8G, XMX=8G , XX:MaxHeapSize=2G (Syetem Memory should be greater than 10G+)
 
 
+
 @echo off
+title Minecraft Server
+color 73
 
 java ^
 -Xmx2G ^
@@ -34,4 +37,6 @@ server.jar ^
 --safeMode ^
 --nogui ^
 
-pause
+echo closing server cmd window...
+timeout /T 2
+exit

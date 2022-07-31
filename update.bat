@@ -16,9 +16,16 @@
 
 
 
+@echo off
+title Minecraft Server Update Tool
+color 73
+
 :: delete old server.jar
 del "server.jar"
 
-
 :: downloading the file from the Mojang website
 curl "https://launcher.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar" --output server.jar
+
+echo server file updated, closing cmd window...
+timeout /T 2
+exit

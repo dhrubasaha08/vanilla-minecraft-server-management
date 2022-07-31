@@ -17,10 +17,6 @@
 @echo off
 title Backup Tool
 color 73
-prompt [backup]:
-cls
-
-:start
 
 for /f "delims=" %%a in ('wmic OS Get localdatetime  ^| find "."') do set dt=%%a
 set YYYY=%dt:~0,4%
@@ -36,6 +32,6 @@ set folder_directory=%cd%
 
 7zG.exe a "%folder_directory%\backup\world_%stamp%.zip" "%folder_directory%\world"
 
-echo Backup complete!
+echo backup complete, closing cmd window...
 TIMEOUT /T 2
 exit
