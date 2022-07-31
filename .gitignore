@@ -9,6 +9,7 @@ libraries/
 logs/
 versions/
 world/
+package/
 
 *.json
 *.jar
