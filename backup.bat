@@ -1,4 +1,4 @@
-:: Script makle a backup of the world folder using 7zip v1.0.0
+:: Script makle a backup of the world folder using 7zip v1.0
 :: Copyright (C) 2022  Dhruba Saha
 
 :: This program is free software: you can redistribute it and/or modify
