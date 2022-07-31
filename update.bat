@@ -1,4 +1,4 @@
-:: Script to update the Minecraft server file from Mojang website
+:: Script to update the Minecraft server file from Mojang website v1.0.0
 :: Copyright (C) 2022  Dhruba Saha
 
 :: This program is free software: you can redistribute it and/or modify
@@ -16,17 +16,9 @@
 
 
 
+:: delete old server.jar
+del "server.jar"
+
 
 :: downloading the file from the Mojang website
-curl "https://launcher.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar" --output server_temp.jar
-
-:: calculating the SHA1 hash of the downloaded file and the original file
-for /f %%i in ('call check.bat server.jar') do set server_SHA=%%i
-for /f %%i in ('call check.bat server_temp.jar') do set server_temp_SHA=%%i
-
-:: if the SHA1 hash of the downloaded file and the original file are same, then the file is not updated elsewise the file is updated
-if %server_SHA% == %server_temp_SHA% (
-    del server_temp.jar
-) else (
-    move server_temp.jar server.jar
-)
+curl "https://launcher.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar" --output server.jar

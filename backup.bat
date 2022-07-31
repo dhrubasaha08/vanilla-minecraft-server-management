@@ -1,4 +1,4 @@
-:: Script makle a backup of the world folder using 7zip
+:: Script makle a backup of the world folder using 7zip v1.0.0
 :: Copyright (C) 2022  Dhruba Saha
 
 :: This program is free software: you can redistribute it and/or modify
@@ -14,7 +14,13 @@
 :: You should have received a copy of the GNU Affero General Public License
 :: along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+@echo off
+title Backup Tool
+color 73
+prompt [backup]:
+cls
 
+:start
 
 for /f "delims=" %%a in ('wmic OS Get localdatetime  ^| find "."') do set dt=%%a
 set YYYY=%dt:~0,4%
@@ -30,4 +36,6 @@ set folder_directory=%cd%
 
 7zG.exe a "%folder_directory%\backup\world_%stamp%.zip" "%folder_directory%\world"
 
-PAUSE
+echo Backup complete!
+TIMEOUT /T 2
+exit
