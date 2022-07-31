@@ -20,15 +20,7 @@
 :: Recommended: XMS=8G, XMX=8G , XX:MaxHeapSize=2G (Syetem Memory should be greater than 10G+)
 
 
-
 @echo off
-title Minecraft Server
-color 73
-prompt [server]:
-cls
-
-:start
-echo Loading server...
 
 java ^
 -Xmx2G ^
@@ -42,25 +34,4 @@ server.jar ^
 --safeMode ^
 --nogui ^
 
-cls
-
-:choice
-set /P a=Do you want to restart[Y/N]?
-if /I "%a%" EQU "Y" goto :restart
-if /I "%a%" EQU "N" goto :stop
-goto :choice
-
-
-:restart
-cls
-echo Server will restart in 10 seconds...
-TIMEOUT /T 10
-cls
-goto :start
-
-:stop
-
-cls
-echo Closing server
-TIMEOUT /T 5
-exit
+pause
