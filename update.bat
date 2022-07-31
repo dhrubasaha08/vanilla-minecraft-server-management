@@ -1,4 +1,4 @@
-:: Script to update the Minecraft server file from Mojang website v1.0.0
+:: Script to update the Minecraft server file from Mojang website v1.0
 :: Copyright (C) 2022  Dhruba Saha
 
 :: This program is free software: you can redistribute it and/or modify
